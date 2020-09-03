@@ -10,10 +10,12 @@ Hi, I just applied a few patches from the suckless repository, feel free to use 
 - lineheight
 - Xresources (compatible with fuzzy patches)
 - Password support (-P)
-- compatible with emoji support if you have [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra)
+- Mouse Buttons supported
+- -r option to reject non-matching input
 
 ### More stuff
 - paste binding is more intuitive (ctrl+v)
+- compatible with emoji support if you have [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra)
 
 ## Original README:
 
