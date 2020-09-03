@@ -16,6 +16,7 @@ Hi, I just applied a few patches from the suckless repository, feel free to use 
 ### More stuff
 - paste binding is more intuitive (ctrl+v)
 - compatible with emoji support if you have [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra)
+- I (more or less regularly) merge new commits from `suckless` upstream and fix the applied patches; current version is `5.0`.
 
 ## Original README:
 
