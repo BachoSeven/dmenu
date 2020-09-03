@@ -1,0 +1,5 @@
+*.o
+dmenu
+stest
+dmenu-*.tar.xz
+config.h
