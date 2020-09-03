@@ -58,7 +58,7 @@ index d605ab4..7505278 100644
 +		match();
 +	}
  }
- 
+
  static size_t
 @@ -636,7 +651,7 @@ setup(void)
  static void
