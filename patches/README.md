@@ -23,7 +23,7 @@ The order in which to apply these patches to a clean dmenu build is the followin
 {
 	add joypixels and change font size:
 	"monospace:size=16",
-	"JoyPixels:pixelsize=16:antialias=true:autohint=true"
+	"Noto Color Emoji:pixelsize=16:antialias=true:autohint=true"
 }
 - mouse support
 - rejectnomatch (-r support, i.e. useful for dmenu-aliases script)
