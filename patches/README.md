@@ -28,4 +28,4 @@ The order in which to apply these patches to a clean dmenu build is the followin
 - mouse support
 - rejectnomatch (-r support, i.e. useful for dmenu-aliases script)
 - remove "iscol [...]"
-- change keybinding for `yank` to `ctrl+v`.
+- change keybinding for `paste` to `ctrl+v`.
