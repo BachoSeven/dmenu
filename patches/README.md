@@ -20,6 +20,7 @@ The order in which to apply these patches to a clean dmenu build is the followin
 - lineheight
 - xresforfuzzy
 - password (reverse patch!!)
+- xyw
 {
 	add joypixels and change font size:
 	"monospace:size=16",
