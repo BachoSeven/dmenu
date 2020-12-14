@@ -17,7 +17,7 @@ The order in which to apply these patches to a clean dmenu build is the followin
 - fuzzies
 - center
 - borderoption
-- lineheight
+- ~~lineheight~~ [don't patch it next time, useless with any multimonitor setup]
 - xresforfuzzy
 - password (reverse patch!!)
 - xyw
