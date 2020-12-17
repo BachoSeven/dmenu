@@ -1,8 +1,12 @@
-From bf60a1eaf98c7aebae51021914e35bc73dd8c23e Mon Sep 17 00:00:00 2001
-From: 0x1bi <ben@0x1bi.net>
-Date: Mon, 17 Feb 2020 11:02:35 -0500
-Subject: [PATCH] added border with option
+From d0c3fc8a634c153856cd41438f705175a21ec69a Mon Sep 17 00:00:00 2001
+From: braskin <benjaminiraskin@gmail.com>
+Date: Thu, 12 Nov 2020 10:13:29 -0500
+Subject: [PATCH] fixed border width draw for topbar
 
+---
+ config.def.h | 3 +++
+ dmenu.c      | 6 +++++-
+ 2 files changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1edb647..dd3eb31 100644
@@ -16,7 +20,7 @@ index 1edb647..dd3eb31 100644
 +/* Size of the window border */
 +static unsigned int border_width = 0;
 diff --git a/dmenu.c b/dmenu.c
-index 65f25ce..f0c3c6f 100644
+index 65f25ce..716e655 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -659,9 +659,11 @@ setup(void)
@@ -24,7 +28,7 @@ index 65f25ce..f0c3c6f 100644
  	swa.background_pixel = scheme[SchemeNorm][ColBg].pixel;
  	swa.event_mask = ExposureMask | KeyPressMask | VisibilityChangeMask;
 -	win = XCreateWindow(dpy, parentwin, x, y, mw, mh, 0,
-+	win = XCreateWindow(dpy, parentwin, x, y, mw, mh, border_width,
++	win = XCreateWindow(dpy, parentwin, x, y - (topbar ? 0 : border_width * 2), mw - border_width * 2, mh, border_width,
  	                    CopyFromParent, CopyFromParent, CopyFromParent,
  	                    CWOverrideRedirect | CWBackPixel | CWEventMask, &swa);
 +	if (border_width)
@@ -42,5 +46,5 @@ index 65f25ce..f0c3c6f 100644
  			usage();
  
 -- 
-2.24.1
+2.25.1
 
