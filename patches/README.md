@@ -30,3 +30,4 @@ The order in which to apply these patches to a clean dmenu build is the followin
 - rejectnomatch (-r support, i.e. useful for dmenu-aliases script)
 - remove "iscol [...]"
 - change keybinding for `paste` to `ctrl+v`.
+- finally, apply the alpha patch (there's little to fix manually)
